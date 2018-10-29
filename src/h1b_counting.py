@@ -10,7 +10,7 @@ def get_h1b(input, output_states, output_occupations):
     # an investigation  of the .csv files shows that
     # the information we want is in the < CASE_NUMBER > <CASE_STATUS>  < WORKSITE_STATE>  <SOC_CODE>
     # <SOC_NAME> (same as SOC_CODE but in string) tags, and   <CASE_STATUS> to test  CERTIFIED
-    #read the data, fail for byte ,ok for test
+    #read the data with pandas 
     data=pandas.read_csv(pathos+'/'+input,delimiter=';',dtype=object,error_bad_lines=False)
     #create the column name that contain this information  and change name
     column_name=data.columns[0:]
