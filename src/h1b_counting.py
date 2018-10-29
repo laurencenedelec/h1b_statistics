@@ -10,12 +10,11 @@ def get_h1b(input, output_states, output_occupations):
     #read the data with pandas 
     data=pandas.read_csv(pathos+'/'+input,delimiter=';',dtype=object,error_bad_lines=False)
     #create the column name that contain this information  and change name
-    column_name=data.columns[0:]
     indexlist=['.*SOC_CODE*','.*SOC_NAME*','.*WORK.*STATE*','.*STATUS*','.*CASE_NUMBER*']
     column_real=[]
     for i in indexlist:
         regex=re.compile(i)
-        name_real = list(filter(regex.match, column_name))[0]
+        name_real = list(filter(regex.match, data.columns))[0]
         column_real.append(name_real)
     df=data[column_real]
     df.columns=['SOC_CODE','SOC_NAME','WORKSITE_STATE','CASE_STATUS','CASE_NUMBER']
