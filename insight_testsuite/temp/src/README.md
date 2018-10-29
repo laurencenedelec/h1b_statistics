@@ -1,6 +1,9 @@
-the python code   hb1_counting.py contain a function get_h1b(,). 
-It create the file top state and top occupation from the test (test1,test2) or the link (real) by passing `test1' 'test2' or 'real' in the second argument. 
-The first argument must contain the year 
+the python code   hb1_counting.py contain the function get_h1b. 
 
-exemple get_h1b(2018,'real'). 
+description of get_h1b : 
+get_h1b (input, output_states, output_occupations)
+It create the file top state and top occupation from the file input and write it into the two  files output_states, output_occupations.
+
+example   get_h1b( '/input/h1b_input.csv','output/top_10_states.txt','output/top_10_occupations.txt')
+
 

@@ -1,10 +1,10 @@
 TOP_STATES;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE
-Florida;2;20.0
-Alabama;1;10.0
-California;1;10.0
-Delaware;1;10.0
-Georgia;1;10.0
-Maryland;1;10.0
-New Jersey;1;10.0
-Texas;1;10.0
-Washington;1;10.0
+FL;2;20.0
+AL;1;10.0
+CA;1;10.0
+DE;1;10.0
+GA;1;10.0
+MD;1;10.0
+NJ;1;10.0
+TX;1;10.0
+WA;1;10.0

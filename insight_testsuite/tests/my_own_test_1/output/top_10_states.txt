@@ -1,11 +1,11 @@
 TOP_STATES;NUMBER_CERTIFIED_APPLICATIONS;PERCENTAGE
-California;13;29.5
-Texas;4;9.1
-New Jersey;4;9.1
-North Carolina;3;6.8
-Pennsylvania;3;6.8
-Michigan;2;4.5
-Florida;2;4.5
-New York;2;4.5
-Massachusetts;2;4.5
-New Mexico;1;2.3
+CA;13;29.5
+TX;4;9.1
+NJ;4;9.1
+NC;3;6.8
+PA;3;6.8
+MI;2;4.5
+FL;2;4.5
+NY;2;4.5
+MA;2;4.5
+NM;1;2.3
