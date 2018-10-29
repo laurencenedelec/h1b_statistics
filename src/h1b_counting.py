@@ -5,12 +5,7 @@ def get_h1b(input, output_states, output_occupations):
     import  csv,re,os.path
     import numpy as np
     pathos=os.getcwd()
-    #from openpyxl import load_workbook
-    #wb = load_workbook('input/H1.xlsx')
-    #data_dec = data.decode('latin-1')
-    #xls_data = io.BytesIO(decoded_data)
-    #data = wb.worksheets[0]
-    #change format test2 change input for real
+    
        
     # an investigation of one of the .csv files shows that
     # the information we want is in the < CASE_NUMBER > <CASE_STATUS>  < WORKSITE_STATE>  <SOC_CODE>
