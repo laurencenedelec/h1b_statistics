@@ -1,7 +1,8 @@
-pip --version
+
 def get_h1b(input, output_states, output_occupations):
     """For a given year , download the data as an CSV file
     """
+    pip --version
     import  csv,re,os.path
     import numpy as np
     pathos=os.getcwd()
