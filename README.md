@@ -1,6 +1,6 @@
 # Table of Contents
 1. [Problem](README.md#problem)
-2. [Approach] (README.md#approach)
+2. [Approach](README.md#approach)
 3. [Run](README.md#run)
 2. [Input Dataset](README.md#input-dataset)
 3. [Instructions](README.md#instructions)
