@@ -1,4 +1,4 @@
-Contain two file `top_10_occupations.txt`  `top_10_states.txt`
+Contains two files:  `top_10_occupations.txt`  `top_10_states.txt`
 
 
  `top_10_occupations.txt`  contain :
