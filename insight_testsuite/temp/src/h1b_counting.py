@@ -1,28 +1,20 @@
+
 def get_h1b(input, output_states, output_occupations):
-    """For a given year , download the data as an CSV file
-    """
-    import pandas, csv,re,os.path
-    import numpy as np
+    import  csv,re,os.path,pandas
     pathos=os.getcwd()
-    #from openpyxl import load_workbook
-    #wb = load_workbook('input/H1.xlsx')
-    #data_dec = data.decode('latin-1')
-    #xls_data = io.BytesIO(decoded_data)
-    #data = wb.worksheets[0]
-    #change format test2 change input for real
+    
        
-    # an investigation of one of the .csv files shows that
+    # an investigation  of the .csv files shows that
     # the information we want is in the < CASE_NUMBER > <CASE_STATUS>  < WORKSITE_STATE>  <SOC_CODE>
     # <SOC_NAME> (same as SOC_CODE but in string) tags, and   <CASE_STATUS> to test  CERTIFIED
-    #read the data, fail for byte ,ok for test
+    #read the data with pandas 
     data=pandas.read_csv(pathos+'/'+input,delimiter=';',dtype=object,error_bad_lines=False)
     #create the column name that contain this information  and change name
-    column_name=data.columns[0:]
     indexlist=['.*SOC_CODE*','.*SOC_NAME*','.*WORK.*STATE*','.*STATUS*','.*CASE_NUMBER*']
     column_real=[]
     for i in indexlist:
         regex=re.compile(i)
-        name_real = list(filter(regex.match, column_name))[0]
+        name_real = list(filter(regex.match, data.columns))[0]
         column_real.append(name_real)
     df=data[column_real]
     df.columns=['SOC_CODE','SOC_NAME','WORKSITE_STATE','CASE_STATUS','CASE_NUMBER']
