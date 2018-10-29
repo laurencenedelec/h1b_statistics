@@ -16,17 +16,17 @@ As a data engineer, you are asked to create a mechanism to analyze past years da
 Your code should be modular and reusable for future. If the newspaper gets data for the year 2019 (with the assumption that the necessary data to calculate the metrics are available) and puts it in the `input` directory, running the `run.sh` script should produce the results in the `output` folder without needing to change the code.
 # Approach
 
-Search the column name of the file to look for the columms containing  "Works States"  "Occupation" "Status"
-Create the statistics. 
-Format for writing the output. 
+Search the column name of the file to look for the columms containing  "Work States", "Occupation", and "Status". 
+Create the required statistics. 
+Format to write the output. 
 
 # Run
 A function get_h1b is create , the function could be run from ./run.sh.  see more in the readme. 
 
 # Input Dataset
-This file as being use to test the code 
-Raw data  [here](https://www.foreignlaborcert.doleta.gov/performancedata.cfm) under the __Disclosure Data__ tab (i.e., files listed in the __Disclosure File__ column with ".xlsx" extension), for year 2018
- Excel files into a semicolon separated (";") format and placed them into this Google drive [folder](https://drive.google.com/drive/folders/1Nti6ClUfibsXSQw5PUIWfVGSIrpuwyxf?usp=sharing). 
+This file was used to test the code are:
+a) Raw data  [here](https://www.foreignlaborcert.doleta.gov/performancedata.cfm) under the __Disclosure Data__ tab (i.e., files listed in the __Disclosure File__ column with ".xlsx" extension), for year 2018.
+ b) The Excel files, which are in a semicolon separated (";") format. These came from this Google drive [folder](https://drive.google.com/drive/folders/1Nti6ClUfibsXSQw5PUIWfVGSIrpuwyxf?usp=sharing). 
 
 
 
