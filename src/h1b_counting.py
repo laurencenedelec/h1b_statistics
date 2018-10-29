@@ -1,6 +1,6 @@
 
 def get_h1b(input, output_states, output_occupations):
-    import  csv,re,os.path
+    import  csv,re,os.path,numpy
     pathos=os.getcwd()
     
        
