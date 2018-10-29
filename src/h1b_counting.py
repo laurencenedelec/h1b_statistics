@@ -7,7 +7,7 @@ def get_h1b(input, output_states, output_occupations):
     pathos=os.getcwd()
     
        
-    # an investigation of one of the .csv files shows that
+    # an investigation  of the .csv files shows that
     # the information we want is in the < CASE_NUMBER > <CASE_STATUS>  < WORKSITE_STATE>  <SOC_CODE>
     # <SOC_NAME> (same as SOC_CODE but in string) tags, and   <CASE_STATUS> to test  CERTIFIED
     #read the data, fail for byte ,ok for test
